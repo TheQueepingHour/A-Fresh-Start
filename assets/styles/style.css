@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.cephNav {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: crimson;
+}
+.cephNav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
