@@ -22,7 +22,10 @@ p, li {
 .cephNav ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.cephNav > ul > li {
+    padding: 0 2em;
 }
 .cephNav > ul > li > a, .cephNav > ul > li > a:visited {
     color: mediumturquoise;
@@ -40,13 +43,33 @@ p, li {
 }
 #cephHead {
     text-align: center;
+    color: mediumseagreen;
+}
+#cephHead > div > img {
+    width: 25%;
+    border-radius: 45%;
+}
+.mainImgs {
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainImgOne, .mainImgTwo {
+    max-width: 50%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
 }
 #cephTime {
     margin: 0 1em;
 }
 #cephTime > h2{
     text-align: center;
+    color: mediumseagreen;
 }
+#cephTime > div > p {
+    color: darkviolet;
+}
+
 #cephGallery {
     text-align: center;
 }
