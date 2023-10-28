@@ -25,7 +25,7 @@ p, li {
     justify-content: space-evenly;
 }
 .cephNav > ul > li > a, .cephNav > ul > li > a:visited {
-    color: turquoise;
+    color: mediumturquoise;
     text-decoration: none;
 }
 .cephNav > ul > li > a:hover, .cephNav > ul > li > a:visited:hover {
@@ -36,4 +36,23 @@ p, li {
     max-width: 80vw;
     background: lightcyan;
     margin: 2em 0;
+    border-radius: 1%;
+}
+#cephHead {
+    text-align: center;
+}
+#cephTime {
+    margin: 0 1em;
+}
+#cephTime > h2{
+    text-align: center;
+}
+#cephGallery {
+    text-align: center;
+}
+#cephGallery > h3 > a, #cephGallery > h3 > a:visited {
+    color: mediumaquamarine;
+}
+#cephGallery > h3 > a:hover, #cephGallery > h3 > a:visited:hover {
+    color: lightcoral;
 }
