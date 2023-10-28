@@ -1,14 +1,34 @@
+/* Body formatting */
 body {
     margin: 0;
     padding: 0;
+    background: ghostwhite;
+
 }
-.cephNav {
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    background-color: crimson;
+/* Page Fonts */
+.cephNav, h1, h2, h3, h4 {
+    font-family: 'Josefin Sans';
 }
+p, li {
+    font-family: 'Lexend';
+}
+/* Nav Styling */
 .cephNav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+}
+.cephNav > ul > li > a {
+    color: red;
+}
+.cephNav > ul > li > a:hover {
+    color: green;
+}
+.cephNav > ul > li > a:visited {
+    color: turquoise;
+}
+/* Page formatting and styling */
+#page-container {
+    max-width: 80vw;
+    background: lightcyan;
 }
