@@ -3,7 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background: ghostwhite;
-
+    background-image: url("https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&q=80&w=765&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 /* Page Fonts */
 .cephNav, h1, h2, h3, h4 {
@@ -18,17 +24,16 @@ p, li {
     display: flex;
     justify-content: space-evenly;
 }
-.cephNav > ul > li > a {
-    color: red;
-}
-.cephNav > ul > li > a:hover {
-    color: green;
-}
-.cephNav > ul > li > a:visited {
+.cephNav > ul > li > a, .cephNav > ul > li > a:visited {
     color: turquoise;
+    text-decoration: none;
+}
+.cephNav > ul > li > a:hover, .cephNav > ul > li > a:visited:hover {
+    color: lightcoral;
 }
 /* Page formatting and styling */
 #page-container {
     max-width: 80vw;
     background: lightcyan;
+    margin: 2em 0;
 }
