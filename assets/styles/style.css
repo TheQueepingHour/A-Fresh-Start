@@ -59,6 +59,7 @@ p, li {
     height: 20vw;
     border-radius: 50%;
 }
+
 #cephTime {
     margin: 0 1em;
 }
@@ -78,4 +79,10 @@ p, li {
 }
 #cephGallery > h3 > a:hover, #cephGallery > h3 > a:visited:hover {
     color: lightcoral;
+}
+
+#cephLists {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 1em;
 }
