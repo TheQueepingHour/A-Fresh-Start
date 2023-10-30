@@ -19,6 +19,7 @@ p, li {
     font-family: 'Lexend';
 }
 /* Nav Styling */
+
 .cephNav ul{
     list-style-type: none;
     display: flex;
@@ -26,6 +27,7 @@ p, li {
 }
 .cephNav > ul > li {
     padding: 0 2em;
+    font-size: 1.2em;
 }
 .cephNav > ul > li > a, .cephNav > ul > li > a:visited {
     color: mediumturquoise;
@@ -37,7 +39,7 @@ p, li {
 /* Page formatting and styling */
 #page-container {
     max-width: 80vw;
-    background: lightcyan;
+    background: rgb(224, 255, 255, 0.75);
     margin: 2em 0;
     border-radius: 1%;
 }
@@ -53,11 +55,18 @@ p, li {
     display: flex;
     justify-content: space-evenly;
 }
-.mainImgOne, .mainImgTwo {
+.mainImgs > div {
     max-width: 50%;
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
+}
+.mainImgOne, .mainImgTwo {
+    max-width: 100%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    rotate: 0deg;
 }
 
 #cephTime {
@@ -85,4 +94,79 @@ p, li {
     display: flex;
     justify-content: space-evenly;
     margin: 0 1em;
+}
+.cephLikes > h3, .cephDislikes > h3 {
+    color: mediumvioletred;
+}
+.cephLikes, .cephDislikes {
+    padding: 1em;
+    border: 0.5em dotted slateblue;
+}
+.cephLikes > ul > li, .cephDislikes > ul > li {
+    color: darkviolet;
+}
+/* Animations */
+/* Image animations */
+.mainImgOne:hover {
+    animation: squidspin 1s forwards;
+}
+@keyframes squidspin {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+.mainImgTwo:focus {
+
+}
+@keyframes squidcray {
+    0% {}
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {}
+}
+
+/* List animations */
+.cephLikes {
+    display: flex;
+    padding: 0 1em;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    transition: width 2s ease, height 2s ease;
+}
+.cephLikes:hover {
+    width: 60vw;
+    height: auto;
+}
+.cephDislikes {
+    height: 40px;
+    width: 20em;
+    overflow: hidden;
+    transition: height 2s ease, width 2s ease;
+}
+.cephDislikes:hover {
+    height: 78px;
+    width: 60vw;
+}
+
+footer {
+    background-color: lightskyblue;
+    padding: 1px;
+    margin-bottom: 1%;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+}
+footer > h4 {
+    text-align: center;
+    
+}
+footer > div > p {
+    margin: 1em;
 }
