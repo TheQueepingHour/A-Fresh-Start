@@ -116,7 +116,7 @@ p, li {
 }
 
 .mainImgTwo:focus {
-
+    animation: squidcray 1s forwards;
 }
 @keyframes squidcray {
     0% {}
