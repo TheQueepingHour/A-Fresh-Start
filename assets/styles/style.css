@@ -84,7 +84,7 @@ p, li {
     text-align: center;
 }
 #cephGallery > h3 > a, #cephGallery > h3 > a:visited {
-    color: mediumaquamarine;
+    color: darkcyan;
 }
 #cephGallery > h3 > a:hover, #cephGallery > h3 > a:visited:hover {
     color: lightcoral;
