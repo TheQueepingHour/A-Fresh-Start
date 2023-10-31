@@ -66,7 +66,7 @@ p, li {
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    rotate: 0deg;
+    outline: 1px solid black;
 }
 
 #cephTime {
@@ -115,21 +115,21 @@ p, li {
     100% {rotate: 360deg;}
 }
 
-.mainImgTwo:focus {
-    animation: squidcray 1s forwards;
+.mainImgTwo:hover {
+    animation: squidcray 3s forwards;
 }
 @keyframes squidcray {
-    0% {}
-    10% {}
-    20% {}
-    30% {}
-    40% {}
-    50% {}
-    60% {}
-    70% {}
-    80% {}
-    90% {}
-    100% {}
+    0% {outline: 1px solid black;}
+    10% {outline: 3em solid gray;}
+    20% {outline: 3em dashed red;}
+    30% {outline: 3em dotted orange;}
+    40% {outline: 3em inset yellow;}
+    50% {outline: 3em outset green;}
+    60% {outline: 3em ridge blue;}
+    70% {outline: 3em double indigo;}
+    80% {outline: 3em dotted violet;}
+    90% {outline: 3em dashed gray;}
+    100% {border: 1px solid darkgray;}
 }
 
 /* List animations */
@@ -159,7 +159,7 @@ p, li {
 footer {
     background-color: lightskyblue;
     padding: 1px;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
 }
