@@ -94,19 +94,6 @@ header > a {
 .overlayBody {
     width: 100%
 }
-/* Button Animation starts here */
-.bigButton:focus + .overlayBody{
-    animation: buttonAni 2s linear forwards;
-}
-@keyframes buttonAni {
-    0% {
-        background-position: 0, 0;
-    }
-    100% {
-        background-position: 100%, 100%;
-    }
-}
-/* Button Animation ends here */
 .galImg {
     width: 25%;
     height: auto;
