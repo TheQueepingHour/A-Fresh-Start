@@ -42,6 +42,7 @@ p, li {
     background: rgb(224, 255, 255, 0.75);
     margin: 2em 0;
     border-radius: 1%;
+    overflow: hidden;
 }
 #cephHead {
     text-align: center;
@@ -136,32 +137,45 @@ p, li {
 .cephLikes {
     display: flex;
     padding: 0 1em;
-    width: 110px;
-    height: 110px;
+    width: 15vw;
+    height: 13vh;
     overflow: hidden;
-    transition: width 2s ease, height 2s ease;
+    transition: width 2s ease, height 3s ease;
+}
+.likeList {
+    opacity: 0;
+    transition: opacity 1s linear;
 }
 .cephLikes:hover {
     width: 60vw;
-    height: auto;
+    height: 30vh;
+    
+    .likeList {
+        opacity: 1;
+    }
 }
 .cephDislikes {
-    height: 40px;
+    height: 3vw;
     width: 20em;
     overflow: hidden;
     transition: height 2s ease, width 2s ease;
 }
+.dislikeList {
+    opacity: 0;
+    transition: opacity 2s linear;
+}
 .cephDislikes:hover {
-    height: 78px;
-    width: 60vw;
+    height: 6vw;
+    width: 40vw;
+
+    .dislikeList {
+        opacity: 1;
+    }
 }
 
 footer {
     background-color: lightskyblue;
-    padding: 1px;
-    margin-bottom: 2%;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 4%;
+    padding: 0.5em;
 }
 footer > h4 {
     text-align: center;
