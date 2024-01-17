@@ -1,14 +1,5 @@
 body {
     padding: 0;
     margin: 0;
+    background: #f8ad9d !important;
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*
-
-*/
